@@ -1,13 +1,8 @@
 """Endpoints module."""
-
-from typing import Optional, List
-
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel
 from dependency_injector.wiring import inject, Provide
-
 from .api_services.api_scraper import ApiScraper
-from .api_services.api_scraper_result import ApiScraperResult
+
 import ipaddress
 from .containers import Container
 
@@ -16,7 +11,7 @@ router = APIRouter()
 
 @router.get("/{ip_address}")
 @inject
-async def index(
+async def get_ip_data(
         ip_address: str,
         api_scraper: ApiScraper = Depends(Provide[Container.api_scraper]),
 ):

@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 
 from .containers import Container
-from . import endpoints
+from .endpoints import router
 
 
 def create_app() -> FastAPI:
@@ -12,7 +12,7 @@ def create_app() -> FastAPI:
 
     _app = FastAPI()
     _app.container = container
-    _app.include_router(endpoints.router)
+    _app.include_router(router)
     return _app
 
 

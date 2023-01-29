@@ -28,6 +28,8 @@ https://www.starlette.io/testclient/
 
 https://docs.pytest.org/en/7.2.x/
 
+https://stackoverflow.com/questions/24617397/how-to-print-to-console-in-pytest
+
 DI
 
 https://python-dependency-injector.ets-labs.org/introduction/di_in_python.html
@@ -40,3 +42,10 @@ https://testdriven.io/blog/fastapi-docker-traefik/
 
 https://gist.github.com/sbv-trueenergy/a9a6971778a01d1acd3c466719e690b8
 
+Redis with docker-compose
+
+https://cloudinfrastructureservices.co.uk/run-redis-with-docker-compose/
+
+Other
+
+https://code.tutsplus.com/tutorials/serialization-and-deserialization-of-python-objects-part-1--cms-26183

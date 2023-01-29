@@ -12,7 +12,7 @@ class CacheService:
 
     def get(self, key: str):
         res = self.r.get(_get_key(key))
-        if res is not None:
+        if res:
             print("cache hit")
             return pickle.loads(res)
         print("key is empty key="+key)

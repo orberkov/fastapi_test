@@ -1,9 +1,9 @@
 """Containers module."""
 
 from dependency_injector import containers, providers
-from .api_services.api_scraper import ApiScraper
-from .api_services.cache_service import CacheService
-from .config_source import ConfigSource
+from api_services.cache_service import CacheService
+from api_services.api_scraper import ApiScraper
+from config_source import ConfigSource
 
 
 class Container(containers.DeclarativeContainer):
