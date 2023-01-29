@@ -20,4 +20,4 @@ class CacheService:
 
     def set(self, key: str, api_scraper_result: str):
         value = pickle.dumps(api_scraper_result, protocol=pickle.HIGHEST_PROTOCOL)
-        self.r.set(_get_key(key), value, ex=10)
+        self.r.set(_get_key(key), value, ex=60 * 60)
