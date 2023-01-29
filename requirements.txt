@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+requests
+asyncio
+
+dependency_injector
+
+pytest
+pytest-asyncio
+httpx
+asgi-lifespan
+pydantic
+
+redis

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "ip-api",
+    "protocol": "http",
+    "host": "ip-api.com",
+    "path": "/json/<ip_address>"
+  },
+  {
+    "name": "bgpview",
+    "protocol": "https",
+    "host": "api.bgpview.io",
+    "path": "/ip/<ip_address>"
+  }
+]

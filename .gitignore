@@ -1,0 +1,6 @@
+.idea
+redis_data
+include
+lib
+bin
+*.iml

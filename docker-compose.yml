@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  api:
+    build: .
+    volumes:
+      - "./src:/src"
+    environment:
+      - REDIS_URL=redis://redis:6379
+    expose:
+      - 8000
+    ports:
+      - "8019:8000"
+    depends_on:
+      - redis
+  redis:
+    image: 'bitnami/redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - ./redis_data:/bitnami/redis/data
+
